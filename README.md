@@ -1,24 +1,38 @@
-# Smart Attendance System – Face Recognition Based Tracker
+# Smart Attendance System
 
-AI-powered attendance system using Python and OpenCV for real-time face detection and automated attendance marking.
+AI-based attendance system using Python and OpenCV for face detection and face recognition.
+
+## Features
+
+- Real-time face detection
+- Face recognition
+- Automatic attendance marking
+- CSV attendance storage
+- Blink verification
 
 ## Tech Stack
 
 - Python
 - OpenCV
 - NumPy
-- Git & GitHub
 - MediaPipe
-
-## Features
-
-- Real-time face detection
-- Face recognition using OpenCV
-- Automated attendance marking
-- Blink verification for basic anti-spoofing
-- CSV attendance storage
+- Git & GitHub
 
 ## Run Project
+
+### Capture Face
+
+```bash
+py capture_faces.py
+```
+
+### Train Model
+
+```bash
+py trainer/train_model.py
+```
+
+### Start Attendance System
 
 ```bash
 py recognizer.py
@@ -26,8 +40,10 @@ py recognizer.py
 
 ## Attendance Output
 
+Attendance is stored in:
+
 ```text
-Saroj,12-05-2026,16:25:10
+attendance.csv
 ```
 
 ## Author
